@@ -1,11 +1,11 @@
 import {PUSH_SCENE, POP_SCENE} from '../actionTypes'
 
 const initialState = {
-  active: 'home',
+  active: 'splash',
   history: [],
 }
 
-export default function scenes(state = initialState, action) {
+export default function scene(state = initialState, action) {
   switch (action.type) {
     case PUSH_SCENE: {
       if (state.active === action.payload) {
